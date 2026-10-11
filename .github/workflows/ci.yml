@@ -1,0 +1,24 @@
+# Checks for this repo come from https://github.com/buildthehomelab/wow-ci.
+# They pick themselves based on what the repo contains (C++, SQL, Lua/.toc, PHP, shell, Python).
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    uses: buildthehomelab/wow-ci/.github/workflows/ci.yml@main
+    permissions:
+      contents: read
+      packages: read
+    with:
+      # Upstream Gatherer files that read globals nothing sets (nLog from another Norganna addon,
+      # plus a few upstream slips). They are kept as shipped; the Lua 5.1 syntax check still runs.
+      lua-exclude: "Gatherer/Astrolabe/** Gatherer/Swag/** Gatherer/GatherComm.lua Gatherer/GatherEvent.lua Gatherer/GatherManifest.lua Gatherer/GathererNodeSearch.lua"

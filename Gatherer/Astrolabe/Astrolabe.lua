@@ -1076,6 +1076,9 @@ ValidMinimapShapes = {
 
 -- distances across and offsets of the world maps
 -- in game yards
+-- Evermore: besides the stock 3.3.5a zones, this table lists the starting-area and
+-- cave maps the Evermore client adds to Kalimdor and the Eastern Kingdoms. Their
+-- sizes come from the client's WorldMapArea bounds.
 WorldMapSize = {
 	-- World Map of Azeroth
 	[0] = {
@@ -1091,6 +1094,12 @@ WorldMapSize = {
 		xOffset = -8590.40725049343,
 		yOffset = 5628.692856102324,
 		zoneData = {
+			AmmenValeStart = {
+				height = 1212.5,
+				width = 1818.75,
+				xOffset = 12281.29,
+				yOffset = 6270.6945,
+			},
 			Ashenvale = {
 				height = 3843.722331667447,
 				width = 5766.728885829694,
@@ -1109,6 +1118,18 @@ WorldMapSize = {
 				xOffset = 9966.708003150136,
 				yOffset = 5460.278492344226,
 			},
+			BanethilBarrowden4_ = {
+				height = 153.3398,
+				width = 230.0098,
+				xOffset = 15381.7396,
+				yOffset = 2918.2236,
+			},
+			BanethilBarrowden5_ = {
+				height = 253.3398,
+				width = 380.0098,
+				xOffset = 15331.7396,
+				yOffset = 2868.2236,
+			},
 			Barrens = {
 				height = 6756.201888541853,
 				width = 10133.44231353798,
@@ -1120,6 +1141,30 @@ WorldMapSize = {
 				width = 3262.535628257626,
 				xOffset = 9541.702868577344,
 				yOffset = 3424.87645454774,
+			},
+			BurningBladeCoven8_ = {
+				height = 177.3333,
+				width = 266,
+				xOffset = 21233.3065,
+				yOffset = 12794.3216,
+			},
+			CampNaracheStart = {
+				height = 1177.082,
+				width = 1766.668,
+				xOffset = 16833.429,
+				yOffset = 15376.8911,
+			},
+			CavernsofTime17_ = {
+				height = 738.3398,
+				width = 1107.5098,
+				xOffset = 21230.5323,
+				yOffset = 20755.5975,
+			},
+			CavernsofTime18_ = {
+				height = 870.6665,
+				width = 1306,
+				xOffset = 20774.2872,
+				yOffset = 20836.4339,
 			},
 			Darkshore = {
 				height = 4366.635262519317,
@@ -1151,6 +1196,18 @@ WorldMapSize = {
 				xOffset = 18041.79555525144,
 				yOffset = 14833.12785083746,
 			},
+			DustwindCave19_ = {
+				height = 172,
+				width = 258,
+				xOffset = 21689.3065,
+				yOffset = 11828.5719,
+			},
+			FelRock3_ = {
+				height = 186.4004,
+				width = 279.6006,
+				xOffset = 15816.9441,
+				yOffset = 2588.1933,
+			},
 			Felwood = {
 				height = 3833.30578953572,
 				width = 5750.062500603067,
@@ -1162,6 +1219,30 @@ WorldMapSize = {
 				width = 6950.07476479001,
 				xOffset = 11625.05968863682,
 				yOffset = 15166.45859885191,
+			},
+			GMIsland = {
+				height = 541,
+				width = 828,
+				xOffset = 318.7534,
+				yOffset = -3725.1179,
+			},
+			Hyjal = {
+				height = 2129.0735,
+				width = 3195.8911,
+				xOffset = 18205.7452,
+				yOffset = 6713.9635,
+			},
+			MaraudonOutside21_ = {
+				height = 400,
+				width = 600,
+				xOffset = 13981.2387,
+				yOffset = 14049.8125,
+			},
+			MaraudonOutside22_ = {
+				height = 373.3467,
+				width = 560.02,
+				xOffset = 13901.7287,
+				yOffset = 13892.1391,
 			},
 			Moonglade = {
 				height = 1539.572004392277,
@@ -1181,11 +1262,47 @@ WorldMapSize = {
 				xOffset = 20747.42615230776,
 				yOffset = 10525.94819392488,
 			},
+			Ogrimmar1_ = {
+				height = 241.39,
+				width = 362.0898,
+				xOffset = 21230.7953,
+				yOffset = 10867.5554,
+			},
+			PalemaneRock6_ = {
+				height = 233.3398,
+				width = 350.01,
+				xOffset = 16486.758,
+				yOffset = 15063.1372,
+			},
+			ShadowglenStart = {
+				height = 966.667,
+				width = 1450.001,
+				xOffset = 15575.0774,
+				yOffset = 1766.5605,
+			},
+			ShadowthreadCave2_ = {
+				height = 320,
+				width = 480,
+				xOffset = 15926.7444,
+				yOffset = 1764.8935,
+			},
 			Silithus = {
 				height = 2322.900917404436,
 				width = 3483.371660836989,
 				xOffset = 14529.25779832084,
 				yOffset = 18758.10034739171,
+			},
+			SkullRock12_ = {
+				height = 180,
+				width = 270,
+				xOffset = 21695.8065,
+				yOffset = 11219.3219,
+			},
+			StillpineHold3_ = {
+				height = 316.6602,
+				width = 474.9902,
+				xOffset = 11714.2627,
+				yOffset = 5675.6984,
 			},
 			StonetalonMountains = {
 				height = 3256.22685709556,
@@ -1211,6 +1328,30 @@ WorldMapSize = {
 				xOffset = 10533.08067788734,
 				yOffset = 6276.205943683332,
 			},
+			TheGapingChasm16_ = {
+				height = 590,
+				width = 885,
+				xOffset = 20679.2872,
+				yOffset = 21699.7674,
+			},
+			TheNoxiousLair15_ = {
+				height = 500,
+				width = 750,
+				xOffset = 19256.7872,
+				yOffset = 20439.7674,
+			},
+			TheSlitheringScar14_ = {
+				height = 255,
+				width = 382.5,
+				xOffset = 18050.5295,
+				yOffset = 20729.7667,
+			},
+			TheVentureCoMine7_ = {
+				height = 494,
+				width = 741,
+				xOffset = 17884.763,
+				yOffset = 14235.8071,
+			},
 			ThousandNeedles = {
 				height = 2933.311990587089,
 				width = 4400.046926738385,
@@ -1223,11 +1364,47 @@ WorldMapSize = {
 				xOffset = 16550.11296988024,
 				yOffset = 13649.80296445508,
 			},
+			TidesHollow2_ = {
+				height = 250,
+				width = 375,
+				xOffset = 10835.708,
+				yOffset = 7306.5285,
+			},
+			TiragardeKeep10_ = {
+				height = 83.334,
+				width = 125.001,
+				xOffset = 22119.3061,
+				yOffset = 13003.1549,
+			},
+			TiragardeKeep11_ = {
+				height = 83.334,
+				width = 125.001,
+				xOffset = 22119.3061,
+				yOffset = 13003.1549,
+			},
+			TwilightsRun13_ = {
+				height = 168.3398,
+				width = 252.5099,
+				xOffset = 16905.5028,
+				yOffset = 18983.0964,
+			},
 			UngoroCrater = {
 				height = 2466.648940830691,
 				width = 3700.039952384531,
 				xOffset = 16533.4461782123,
 				yOffset = 18766.43318304924,
+			},
+			ValleyofTrialsStart = {
+				height = 900,
+				width = 1350,
+				xOffset = 20708.4726,
+				yOffset = 12799.8219,
+			},
+			WailingCavernsBarrens20_ = {
+				height = 380,
+				width = 570,
+				xOffset = 18969.2569,
+				yOffset = 13289.8205,
 			},
 			Winterspring = {
 				height = 4733.299352687333,
@@ -1251,6 +1428,12 @@ WorldMapSize = {
 				xOffset = 17388.63468066122,
 				yOffset = 9676.382149825957,
 			},
+			AmaniCatacombs1_ = {
+				height = 200,
+				width = 300,
+				xOffset = 22951.966,
+				yOffset = 5866.3646,
+			},
 			Arathi = {
 				height = 2400.009317069356,
 				width = 3599.999517304195,
@@ -1262,6 +1445,24 @@ WorldMapSize = {
 				width = 2487.500569928747,
 				xOffset = 20251.13345045087,
 				yOffset = 17065.99453090572,
+			},
+			BlackrockMountain14_ = {
+				height = 475,
+				width = 712.5,
+				xOffset = 18933.2175,
+				yOffset = 18501.416,
+			},
+			BlackrockMountain15_ = {
+				height = 170,
+				width = 255,
+				xOffset = 19316.9675,
+				yOffset = 18656.416,
+			},
+			BlackrockMountain16_ = {
+				height = 506.6826,
+				width = 760.024,
+				xOffset = 18799.4535,
+				yOffset = 18263.0747,
 			},
 			BlastedLands = {
 				height = 2233.342487048268,
@@ -1275,11 +1476,35 @@ WorldMapSize = {
 				xOffset = 18438.63415866318,
 				yOffset = 18207.66550773985,
 			},
+			ColdridgePass6_ = {
+				height = 220,
+				width = 330,
+				xOffset = 17926.967,
+				yOffset = 17196.4033,
+			},
+			ColdridgeValley = {
+				height = 643.75,
+				width = 964.583,
+				xOffset = 17192.8,
+				yOffset = 17138.9033,
+			},
+			DeadminesWestfall17_ = {
+				height = 300,
+				width = 450,
+				xOffset = 16379.4682,
+				yOffset = 22231.4254,
+			},
 			DeadwindPass = {
 				height = 1666.673717206878,
 				width = 2499.999255461505,
 				xOffset = 19005.30099399293,
 				yOffset = 21043.09319963172,
+			},
+			DeathknellStart = {
+				height = 727.083,
+				width = 1089.584,
+				xOffset = 16024.0523,
+				yOffset = 8905.5394,
 			},
 			DunMorogh = {
 				height = 3283.346244075043,
@@ -1299,6 +1524,12 @@ WorldMapSize = {
 				xOffset = 20459.46800337001,
 				yOffset = 7472.207074316265,
 			},
+			EchoRidgeMine3_ = {
+				height = 186,
+				width = 279,
+				xOffset = 18198.9681,
+				yOffset = 19676.4195,
+			},
 			Elwynn = {
 				height = 2314.592478810788,
 				width = 3470.832795915813,
@@ -1311,11 +1542,53 @@ WorldMapSize = {
 				xOffset = 20259.46550654072,
 				yOffset = 2534.687768168357,
 			},
+			Fargodeepmine1_ = {
+				height = 160,
+				width = 240,
+				xOffset = 17890.2181,
+				yOffset = 20876.4195,
+			},
+			Fargodeepmine2_ = {
+				height = 170,
+				width = 255,
+				xOffset = 17882.7181,
+				yOffset = 20886.4195,
+			},
+			FrostmaneHold8_ = {
+				height = 234.3911,
+				width = 341.8832,
+				xOffset = 17323.9066,
+				yOffset = 16661.1894,
+			},
+			FrostmaneHovel9_ = {
+				height = 177.6602,
+				width = 266.4902,
+				xOffset = 17663.7219,
+				yOffset = 17622.0732,
+			},
 			Ghostlands = {
 				height = 2200.008615840919,
 				width = 3300.001914001321,
 				xOffset = 21055.29898547313,
 				yOffset = 5309.698628620597,
+			},
+			GnomereganEntrance10_ = {
+				height = 467.2319,
+				width = 730.4875,
+				xOffset = 17089.0381,
+				yOffset = 15939.2895,
+			},
+			GolBolarQuarry11_ = {
+				height = 249.3398,
+				width = 374.0098,
+				xOffset = 19714.9621,
+				yOffset = 16663.2334,
+			},
+			GoldCoastQuarry4_ = {
+				height = 175,
+				width = 262.5,
+				xOffset = 16075.7182,
+				yOffset = 21606.4254,
 			},
 			Hilsbrad = {
 				height = 2133.341648261057,
@@ -1335,17 +1608,47 @@ WorldMapSize = {
 				xOffset = 18885.55918004965,
 				yOffset = 15745.64757909506,
 			},
+			JangolodeMine5_ = {
+				height = 184.666,
+				width = 277,
+				xOffset = 16601.4682,
+				yOffset = 20975.0923,
+			},
+			JasperlodeMine19_ = {
+				height = 215.5,
+				width = 323.25,
+				xOffset = 18617.8431,
+				yOffset = 20161.4195,
+			},
 			LochModan = {
 				height = 1839.589436540107,
 				width = 2758.333078630792,
 				xOffset = 20165.71744013867,
 				yOffset = 15663.90644131906,
 			},
+			NightWebsHollow12_ = {
+				height = 146.6667,
+				width = 220,
+				xOffset = 16151.9693,
+				yOffset = 9053.0389,
+			},
+			Northshire = {
+				height = 645.834,
+				width = 968.75,
+				xOffset = 17984.4681,
+				yOffset = 19747.2515,
+			},
 			Redridge = {
 				height = 1447.921846941264,
 				width = 2170.833008876805,
 				xOffset = 19742.80073199006,
 				yOffset = 19751.42200372843,
+			},
+			ScarletMonasteryEntrance13_ = {
+				height = 136.6602,
+				width = 204.9902,
+				xOffset = 18831.9728,
+				yOffset = 8227.5447,
 			},
 			SearingGorge = {
 				height = 1487.505327445583,
@@ -1377,6 +1680,12 @@ WorldMapSize = {
 				xOffset = 15951.13530113703,
 				yOffset = 22345.18245588815,
 			},
+			SunstriderIsleStart = {
+				height = 1066.667,
+				width = 1600,
+				xOffset = 21155.3004,
+				yOffset = 2743.0243,
+			},
 			Sunwell = {
 				height = 2218.75784157939,
 				width = 3327.080984022923,
@@ -1389,11 +1698,23 @@ WorldMapSize = {
 				xOffset = 20394.88344424886,
 				yOffset = 20797.25895394673,
 			},
+			TheGrizzledDen7_ = {
+				height = 337,
+				width = 505.5,
+				xOffset = 18139.217,
+				yOffset = 16489.4033,
+			},
 			Tirisfal = {
 				height = 3012.512329627232,
 				width = 4518.747902731258,
 				xOffset = 15138.6360714653,
 				yOffset = 7338.872677268415,
+			},
+			Uldaman18_ = {
+				height = 375,
+				width = 562.5,
+				xOffset = 20920.7169,
+				yOffset = 17131.4115,
 			},
 			Undercity = {
 				height = 640.1066040851099,
