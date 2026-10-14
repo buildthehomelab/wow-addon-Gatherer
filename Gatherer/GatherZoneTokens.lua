@@ -67,7 +67,7 @@ local FileNameToTokenMap = {
 		["ThunderBluff"] = "THUNDER_BLUFF",
 		["UngoroCrater"] = "UNGORO_CRATER",
 		["Winterspring"] = "WINTERSPRING",
-		-- Evermore client maps (starting areas and caves); the token is the map
+		-- Project Reforged HD extra zone maps (starting areas and caves); the token is the map
 		-- file name, which is what nodes were saved under before these were listed
 		["AmmenValeStart"] = "AmmenValeStart",
 		["BanethilBarrowden4_"] = "BanethilBarrowden4_",
@@ -130,7 +130,7 @@ local FileNameToTokenMap = {
 		["WesternPlaguelands"] = "WESTERN_PLAGUELANDS",
 		["Westfall"] = "WESTFALL",
 		["Wetlands"] = "WETLANDS",
-		-- Evermore client maps (starting areas and caves); the token is the map
+		-- Project Reforged HD extra zone maps (starting areas and caves); the token is the map
 		-- file name, which is what nodes were saved under before these were listed
 		["AmaniCatacombs1_"] = "AmaniCatacombs1_",
 		["BlackrockMountain14_"] = "BlackrockMountain14_",

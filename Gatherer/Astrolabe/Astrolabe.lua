@@ -1076,9 +1076,9 @@ ValidMinimapShapes = {
 
 -- distances across and offsets of the world maps
 -- in game yards
--- Evermore: besides the stock 3.3.5a zones, this table lists the starting-area and
--- cave maps the Evermore client adds to Kalimdor and the Eastern Kingdoms. Their
--- sizes come from the client's WorldMapArea bounds.
+-- Besides the stock 3.3.5a zones, this table lists the starting-area and cave maps
+-- that Project Reforged HD adds to Kalimdor and the Eastern Kingdoms (its extra zone maps).
+-- Their sizes come from that client's WorldMapArea bounds. Stock clients never use them.
 WorldMapSize = {
 	-- World Map of Azeroth
 	[0] = {
