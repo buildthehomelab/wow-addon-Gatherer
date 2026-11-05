@@ -1893,25 +1893,14 @@ zeroData = { xOffset = 0, height = 0, yOffset = 0, width = 0, __index = function
 setmetatable(zeroData, zeroData);
 setmetatable(WorldMapSize, zeroData);
 
--- A client patch that adds Riverlands (WoW Forever's Riverglades) brings Forever's frame for the Eastern Kingdoms map. It can
--- also bring Forever's Redridge, drawn 110.417 yards further east: Forever's Render's Camp overlay is four files and the
--- client's two, so the third file says which map this client has. Without those the numbers above stand.
+-- A client patch that adds Riverlands (WoW Forever's Riverglades) can bring Forever's Redridge, drawn 110.417 yards further
+-- east: Forever's Render's Camp overlay is four files and the client's two, so the third file says which map this client
+-- has. The Eastern Kingdoms map keeps the client's frame (the patch draws the new coast into the client's own map), so the
+-- continent's numbers above stand.
 do
 	local continent = WorldMapSize[2];
 	if CreateFrame("Frame"):CreateTexture():SetTexture("Interface\\WorldMap\\Redridge\\RENDERSCAMP3") then
 		continent.zoneData.Redridge.xOffset = continent.zoneData.Redridge.xOffset + 110.417;
-	end
-	local patched = false;
-	for _, mapName in pairs(Astrolabe.ContinentList[2]) do
-		patched = patched or mapName == "Riverlands";
-	end
-	if patched then
-		local left, top = 16000 - 18171.970703125, 7466.6000976562 - 11176.34375;
-		continent.width, continent.height = 35199.900390625, 23466.6000976562;
-		continent.xOffset, continent.yOffset = continent.xOffset - left, continent.yOffset - top;
-		for _, zone in pairs(continent.zoneData) do
-			zone.xOffset, zone.yOffset = zone.xOffset + left, zone.yOffset + top;
-		end
 	end
 end
 
