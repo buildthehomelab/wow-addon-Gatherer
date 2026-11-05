@@ -1893,6 +1893,25 @@ zeroData = { xOffset = 0, height = 0, yOffset = 0, width = 0, __index = function
 setmetatable(zeroData, zeroData);
 setmetatable(WorldMapSize, zeroData);
 
+-- A client patch that adds Riverlands (WoW Forever's Riverglades) brings Forever's frame for the Eastern Kingdoms map and
+-- Forever's Redridge, drawn 110.417 yards further east. Without that patch the numbers above stand.
+do
+	local patched = false;
+	for _, mapName in pairs(Astrolabe.ContinentList[2]) do
+		patched = patched or mapName == "Riverlands";
+	end
+	if patched then
+		local continent = WorldMapSize[2];
+		local left, top = 16000 - 18171.970703125, 7466.6000976562 - 11176.34375;
+		continent.width, continent.height = 35199.900390625, 23466.6000976562;
+		continent.xOffset, continent.yOffset = continent.xOffset - left, continent.yOffset - top;
+		continent.zoneData.Redridge.xOffset = continent.zoneData.Redridge.xOffset + 110.417;
+		for _, zone in pairs(continent.zoneData) do
+			zone.xOffset, zone.yOffset = zone.xOffset + left, zone.yOffset + top;
+		end
+	end
+end
+
 for continent, zones in pairs(Astrolabe.ContinentList) do
 	local mapData = WorldMapSize[continent];
 	for index, mapName in pairs(zones) do
