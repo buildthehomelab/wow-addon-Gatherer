@@ -152,6 +152,7 @@ local FileNameToTokenMap = {
 		["JasperlodeMine19_"] = "JasperlodeMine19_",
 		["NightWebsHollow12_"] = "NightWebsHollow12_",
 		["Northshire"] = "Northshire",
+		["Riverlands"] = "Riverlands",
 		["ScarletMonasteryEntrance13_"] = "ScarletMonasteryEntrance13_",
 		["SunstriderIsleStart"] = "SunstriderIsleStart",
 		["TheGrizzledDen7_"] = "TheGrizzledDen7_",
