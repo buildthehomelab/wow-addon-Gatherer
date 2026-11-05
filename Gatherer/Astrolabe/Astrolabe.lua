@@ -1638,6 +1638,12 @@ WorldMapSize = {
 				xOffset = 17984.4681,
 				yOffset = 19747.2515,
 			},
+			Riverlands = {
+				height = 3233.333984375,
+				width = 4850,
+				xOffset = 20063.633738,
+				yOffset = 17643.088020,
+			},
 			Redridge = {
 				height = 1447.921846941264,
 				width = 2170.833008876805,
